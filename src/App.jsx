@@ -12,8 +12,9 @@ import { insertionSort } from './components/sorts/insertionSort';
 
 
 function App() {
+
   const [array, setArray] = useState([]);
-  const [speed, setSpeed] = useState(500);
+  const [speed, setSpeed] = useState(500);// will apply logic later
   const [selectedSort, setSelectedSort] = useState('Bubble Sort'); 
   const [barColors, setBarColors] = useState({});
   const [isSorting, setIsSorting] = useState(false);
@@ -26,11 +27,11 @@ function App() {
       Math.floor(Math.random() * 100) + 10
     );
     setArray(newArr);
-    setBarColors({}); // Reset the colors when generating new array
+    setBarColors({}); // this will basically reset the colors when generating new array
   };
 
   const sortArray = async () => {
-    if (isSorting) return; // Prevent starting a new sort if one is in progress
+    if (isSorting) return; // starting a new sort if one is in progress already and stop the previous one
     setIsSorting(true);
     sortingRef.current = true;
 

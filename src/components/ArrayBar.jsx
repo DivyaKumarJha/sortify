@@ -2,6 +2,7 @@ import React from 'react';
 
 function ArrayBar({ array, colorMap = {} }) {
   return (
+    // this shit is gpted, i litteraly got brain fucked big time comprehending the styling, i hate styling, was only gonna focus on logical part
     <div>
       <div className="flex items-end justify-center h-80 mb-8 bg-white p-5 rounded-lg shadow-md">
       {array.map((value, index) => (

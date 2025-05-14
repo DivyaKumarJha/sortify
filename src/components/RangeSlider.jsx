@@ -14,10 +14,11 @@ function RangeSlider({ speed, setSpeed }) {
         max="1000"
         value={speed}
         onChange={(e) => setSpeed(Number(e.target.value))}
-        className="w-3/5 mt-3 appearance-none h-2 bg-gray-300 rounded-full outline-none accent-purple-700"
-      />
+        className="w-3/5 mt-3 appearance-none h-2 bg-gray-300 rounded-full outline-none accent-purple-700"/>
     </div>
   );
 }
+
+
 
 export default RangeSlider;
